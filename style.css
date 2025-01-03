@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#scoreDisplay {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#gameCanvas {
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    width: 90vw;
+    height: 90vw;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#controlPad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.middleRow {
+    display: flex;
+    justify-content: center;
+}
+
+#controlPad button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 80px; /* Größere Tasten */
+    height: 80px; /* Größere Tasten */
+    font-size: 24px; /* Größere Schrift */
+    margin: 10px; /* Mehr Abstand */
+    cursor: pointer;
+}
+
+#controlPad button:active {
+    background-color: #ff5555;
+}
+
+#settingsButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#settingsButton:active {
+    background-color: #0056b3;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.popup h2 {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:active {
+    background-color: #0056b3;
+}
